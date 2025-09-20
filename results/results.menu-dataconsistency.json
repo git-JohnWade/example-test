@@ -1,0 +1,165 @@
+{
+  "config": {
+    "rootDir": "/Users/administrator/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/administrator/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/administrator/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example-test/tests/menu-dataconsistency.spec.ts",
+      "file": "example-test/tests/menu-dataconsistency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Greggs menu - data consistency",
+          "file": "example-test/tests/menu-dataconsistency.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Menu labels match destination URLs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24953,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Breakfast : /menu?category=breakfast\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Savouries & Bakes : /menu?category=savouries-bakes\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Drinks & Snacks : /menu?category=drinks-snacks\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Sandwiches & Salads : /menu?category=sandwiches-salads\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Sweet Treats : /menu?category=sweet-treats\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Hot Food : /menu?category=hot-food\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: View all products : /menu\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Allergens & Nutrition : /nutrition\n"
+                        },
+                        {
+                          "text": "Verifying top-level link: FIND A SHOP : /shop-finder\n"
+                        },
+                        {
+                          "text": "Verifying top-level link: WAYS TO ORDER : /order\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Gift cards : /gift-cards/\n"
+                        },
+                        {
+                          "text": "Verifying submenu link: Check gift card balance : /gift-cards#check-gift-card-balance\n"
+                        },
+                        {
+                          "text": "Verifying top-level link: GREGGS APP : /app\n"
+                        },
+                        {
+                          "text": "Verifying top-level link: DOING GOOD : /doing-good\n"
+                        },
+                        {
+                          "text": "Verifying top-level link: NEWS : /news/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:35:19.706Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d0db16ba7cfa2075b1c3-f79c45cf6598f88a70d9",
+              "file": "example-test/tests/menu-dataconsistency.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-20T21:35:18.733Z",
+    "duration": 26287.866,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

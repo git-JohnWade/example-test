@@ -1,0 +1,218 @@
+{
+  "config": {
+    "rootDir": "/Users/administrator/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/administrator/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/administrator/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example-test/tests/menu-responsiveness.spec.ts",
+      "file": "example-test/tests/menu-responsiveness.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Desktop viewport",
+          "file": "example-test/tests/menu-responsiveness.spec.ts",
+          "line": 13,
+          "column": 8,
+          "specs": [
+            {
+              "title": "Top-level menu items expand and collapse - Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25466,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:40:45.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f13988b4b1bf0472662b-6720818e1956ac9e6a8b",
+              "file": "example-test/tests/menu-responsiveness.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Tablet viewport",
+          "file": "example-test/tests/menu-responsiveness.spec.ts",
+          "line": 13,
+          "column": 8,
+          "specs": [
+            {
+              "title": "Top-level menu items expand and collapse - Tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28451,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:41:11.784Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f13988b4b1bf0472662b-585c5282a5c206f7a6a1",
+              "file": "example-test/tests/menu-responsiveness.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Mobile viewport",
+          "file": "example-test/tests/menu-responsiveness.spec.ts",
+          "line": 13,
+          "column": 8,
+          "specs": [
+            {
+              "title": "Top-level menu items expand and collapse - Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27253,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:41:40.259Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f13988b4b1bf0472662b-b7a61096d49d64281990",
+              "file": "example-test/tests/menu-responsiveness.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-20T21:40:44.892Z",
+    "duration": 82746.29,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "config": {
+    "rootDir": "/Users/administrator/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/administrator/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/administrator/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example-test/tests/menu-accessibility.spec.ts",
+      "file": "example-test/tests/menu-accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Greggs menu - accessibility",
+          "file": "example-test/tests/menu-accessibility.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Menu button toggles aria-expanded and submenu visibility",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9337,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"false\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"false\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n    at /Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts:19:23",
+                        "location": {
+                          "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                          "column": 23,
+                          "line": 19
+                        },
+                        "snippet": "  17 |     \n  18 |     // Initially collapsed\n> 19 |     await expect(btn).toHaveAttribute('aria-expanded', 'false');\n     |                       ^\n  20 |\n  21 |     // Expand submenu\n  22 |     await btn.click();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                            "column": 23,
+                            "line": 19
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"false\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n\n  17 |     \n  18 |     // Initially collapsed\n> 19 |     await expect(btn).toHaveAttribute('aria-expanded', 'false');\n     |                       ^\n  20 |\n  21 |     // Expand submenu\n  22 |     await btn.click();\n    at /Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts:19:23"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:32:37.534Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/administrator/test-results/example-test-tests-menu-ac-42058-nded-and-submenu-visibility/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                        "column": 23,
+                        "line": 19
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "77e1287a6df8405ee2ff-75e887d6e13bf363084b",
+              "file": "example-test/tests/menu-accessibility.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "Menu is fully keyboard navigable",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8996,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"true\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"true\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n    at /Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts:40:23",
+                        "location": {
+                          "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                          "column": 23,
+                          "line": 40
+                        },
+                        "snippet": "  38 |     await btn.focus();\n  39 |     await page.keyboard.press('Enter');\n> 40 |     await expect(btn).toHaveAttribute('aria-expanded', 'true');\n     |                       ^\n  41 |\n  42 |     // Verify expected submenu label is visible and focused\n  43 |     await page.keyboard.press('ArrowDown');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                            "column": 23,
+                            "line": 40
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Menu & allergens' })\nExpected string: \u001b[32m\"true\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu & allergens' })\u001b[22m\n\u001b[2m    9 × locator resolved to <button tabindex=\"0\" type=\"button\" data-v-9134f471=\"\" class=\"flex w-full items-baseline whitespace-nowrap p-5 hover:underline lg:w-auto lg:p-3 xl:p-5\">…</button>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n\n  38 |     await btn.focus();\n  39 |     await page.keyboard.press('Enter');\n> 40 |     await expect(btn).toHaveAttribute('aria-expanded', 'true');\n     |                       ^\n  41 |\n  42 |     // Verify expected submenu label is visible and focused\n  43 |     await page.keyboard.press('ArrowDown');\n    at /Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts:40:23"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Cookie banner detected, accepting cookies...\n"
+                        },
+                        {
+                          "text": "Cookie banner handled.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-20T21:32:48.429Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/administrator/test-results/example-test-tests-menu-ac-9c967-is-fully-keyboard-navigable/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/administrator/tests/example-test/tests/menu-accessibility.spec.ts",
+                        "column": 23,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "77e1287a6df8405ee2ff-afd7edec457c9a55844f",
+              "file": "example-test/tests/menu-accessibility.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-20T21:32:36.571Z",
+    "duration": 21254.527000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
